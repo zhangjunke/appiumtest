@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="xtws" parallel="true">
+    <test name="xtwstest">
+        <classes>
+            <class name="com.junker.appiumtest.cases.StartTest" />
+            <class name="com.junker.appiumtest.cases.SmokeTest" />
+        </classes>
+    </test> <!-- Test -->
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+    </listeners>
+</suite> <!-- Suite -->
